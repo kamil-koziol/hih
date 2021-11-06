@@ -1,0 +1,334 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  padding: 2rem;
+}
+
+.bg-light {
+  background-color: white;
+}
+
+.text-light {
+  color: white;
+}
+
+.bg-dark {
+  background-color: #1a1818;
+}
+
+.text-dark {
+  color: #1a1818;
+}
+
+.bg-dark-accent {
+  background-color: #212121;
+}
+
+.text-dark-accent {
+  color: #212121;
+}
+
+.text-light-accent {
+  color: #cdcdcd;
+}
+
+.bg-light-accent {
+  background-color: #cdcdcd;
+}
+
+* {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+body {
+  background-color: #1a1818;
+}
+
+.Navbar {
+  padding: 1rem 2rem 1rem 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.Navbar img {
+  width: 32px;
+  color: white;
+}
+
+.Navbar a {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+
+.Navbar a:hover {
+  color: white;
+}
+
+.Navbar .active {
+  color: white;
+}
+
+.About {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Benefits {
+  flex-direction: column;
+}
+
+.Benefits h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.BenefitsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.BenefitsElement {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.BenefitsElement img {
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: #212121;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.BenefitsElement span {
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.Footer p {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+
+.Minimalists {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 50px;
+}
+
+.MinimalistsPerson {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.MinimalistsPerson img {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.WhatToRead {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+}
+
+.Books {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.BookDetails {
+  overflow-wrap: break-word;
+}
+
+.ui-autocomplete {
+  border-radius: 20px;
+}
+
+.ui-menu-item {
+  color: black;
+  background-color: white;
+  list-style: none;
+  width: 200px;
+  padding: 5px;
+}
+
+#add-book-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#add-book-form input[type="text"] {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#add-book-form input[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.labelgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.labelgroup label {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .Benefits h1 {
+    margin-bottom: 50px;
+  }
+
+  .BenefitsList {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .BenefitsElement {
+    flex: 40%;
+    width: 100%;
+  }
+
+  .Minimalists {
+    padding: 50px;
+  }
+
+  .MinimalistsPerson {
+    margin-bottom: 30px;
+  }
+
+  .Navbar {
+    justify-content: center;
+    gap: 30px;
+  }
+  .Navbar a {
+    font-size: larger;
+  }
+
+  #add-book-form {
+    gap: 30px;
+  }
+
+  #add-book-form input[type="text"] {
+    border-radius: 6px;
+    font-size: 18px;
+  }
+
+  #add-book-form input[type="submit"] {
+    width: 40%;
+    font-size: 18px;
+  }
+
+  .labelgroup {
+    gap: 8px;
+  }
+
+  .labelgroup label {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Navbar {
+    gap: 30px;
+  }
+  .Navbar a {
+    font-size: larger;
+  }
+
+  .container {
+    padding: 4rem;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .Benefits h1 {
+    margin-bottom: 100px;
+  }
+
+  .MinimalistsPerson img {
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  .MinimalistsPerson {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .ReversedPerson {
+    flex-direction: row-reverse;
+  }
+
+  .AuthorSide h2 {
+    margin-bottom: 10px;
+  }
+
+  .BookDetails {
+    display: flex;
+    flex-direction: column;
+  }
+}
